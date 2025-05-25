@@ -9,7 +9,7 @@ jobs:
       - name: checkout of the code
         uses: actions/checkout@v4
         with:
-          repository: stella-0428/python-code.git
+          repository: stella-0428/pythoncode
           ref: main
       - name: checkout of the code
         uses: actions/upload-artifact@v4
