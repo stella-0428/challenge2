@@ -7,7 +7,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - name: checkout of the code
-      uses: action/checkout@v1
+      uses: action/checkout@ref
         with:
           repository: stella-0428/python-code
           ref: main
