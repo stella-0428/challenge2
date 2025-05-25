@@ -7,12 +7,12 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - name: checkout of the code
-      uses: action/checkout@ref
+      uses: actions/checkout@ref
         with:
           repository: stella-0428/python-code
           ref: main
     - name: checkout of the code
-      uses: action/upload-artifact
+      uses: actions/upload-artifact
         with:
           name: $ARTIFACT_NAME
           path: artifacts_storage/
