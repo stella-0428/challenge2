@@ -4,15 +4,15 @@ env:
   ARTIFACT_NAME: 'challenge2-artifact'
 jobs:
   challenge2:
-  runs-on: ubuntu-latest
-  steps:
-    - name: checkout of the code
-      uses: actions/checkout@ref
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout of the code
+        uses: actions/checkout@v4
         with:
           repository: stella-0428/python-code
           ref: main
-    - name: checkout of the code
-      uses: actions/upload-artifact
+      - name: checkout of the code
+        uses: actions/upload-artifact@v4
         with:
           name: $ARTIFACT_NAME
           path: artifacts_storage/
