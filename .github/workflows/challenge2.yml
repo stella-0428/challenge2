@@ -1,0 +1,21 @@
+name: challenge2
+on: push
+env: 
+  ARTIFACT_NAME: 'challenge2-artifact'
+jobs:
+  challenge2:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout of the code
+      uses: action/checkout@v1
+        with:
+          repository: stella-0428/python-code
+          ref: main
+    - name: checkout of the code
+      uses: action/upload-artifact
+        with:
+          name: $ARTIFACT_NAME
+          path: artifacts_storage/
+
+    
+    
